@@ -1,0 +1,18 @@
+/* When we want to make a container responsive, we should use min-height property */
+.container {
+    margin-top: 5rem;
+    width: 100%;
+    display: Flex;
+    justify-content: center;    
+    align-items: center;
+    min-height: 180px;
+    border: 2px solid black;
+    flex-wrap: wrap;
+}
+
+.item {
+    height: 100px;
+    width: 100px;
+    background-color: #2a5298;
+    margin: 0.2rem;
+}

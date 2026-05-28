@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gap Property</title>
+</head>
+<style>
+    .bar {
+        display: flex;
+        background-color: black;
+        justify-content: space-between;
+        color: white;
+        font-size: large;
+        align-items: center;
+        height: 10vh;
+    }
+    .left{
+        border: 2px solid red;
+        display: flex;
+        gap: 30px;
+    }
+    .right{
+        border: 2px solid red;
+        display: flex;
+        gap: 30px;
+    }
+    .center img{
+        height: 50px;
+        width: 50px;
+    }
+</style>
+<body>
+    <div class="bar">
+        <div class="left">
+            <div>Left-1</div>
+            <div>Left-2</div>
+        </div>
+        <div class="center">
+            <img src="/images/Google.jpg" alt="">
+        </div>
+        <div class="right">
+            <div>Right-1</div>
+            <div>Right-2</div>
+        </div>
+    </div>
+</body>
+</html>

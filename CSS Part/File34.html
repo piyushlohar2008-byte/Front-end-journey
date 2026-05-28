@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations-3</title>
+</head>
+<style>
+    .container{
+        height: 270px;
+        width: 1000px;
+        background-color: rgba(238, 122, 40, 0.596);
+        border: 2px solid black;
+    }
+    #item-1{
+        position: relative;
+        top: 20px;
+        left: 10px;
+        height: 100px;
+        width: 100px;
+        background-color: rgb(255, 0, 0);
+        border: 2px solid black;
+        animation-name: forward-box;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+        animation-delay: 1s;
+    }
+    @keyframes forward-box {
+        0%{
+            top: 20px;
+            left: 20px;
+        }
+        100%{
+            top: 20px;
+            left: 884px;
+        }
+    }
+    @keyframes reverse-box {
+        0%{
+            top: 150px;
+            right: 20px;
+        }
+        100%{
+            top: 150px;
+            right: 900px;
+        }
+    }
+    #item-2{
+        position: absolute;
+        top: 150px;
+        right: 20px;
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+        border: 2px solid black;
+        animation-name: reverse-box;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+        animation-delay: 1s;
+    }
+</style>
+<body>
+    <div class="container">
+        <div id="item-1"></div>
+        <div id="item-2"></div>
+    </div>
+</body>
+</html>

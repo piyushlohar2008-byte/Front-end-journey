@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piyush Hotel</title>
+  </head>
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+      height: 100%;
+      width: 100%;
+      background-color: rgb(139, 82, 82);
+    }
+    .first {
+      position: absolute;
+      display: inline-block;
+      left: 10px;
+      margin: 20px 10px;
+    }
+    .second {
+      display: block;
+      margin: 10px auto;
+      width: 35%;
+    }
+    .third {
+      display: inline-block;
+      position: absolute;
+      right: 34px;
+      top: 0px;
+      margin: 20px 10px;
+    }
+    .first img {
+      width: 100px;
+      height: 80px;
+    }
+    #name {
+      font-family: cursive;
+      text-align: center;
+      color: white;
+    }
+    .Bar {
+      display: inline-block;
+    }
+    .Bar li {
+      display: inline-block;
+      padding-left: 14px;
+      font-size: 18px;
+    }
+    .Bar a {
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+    }
+    .btn {
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: rgb(255, 123, 0);
+    }
+    .Bar a:hover{
+      color: rgb(179, 179, 179);
+      text-decoration-line: line-through;
+    }
+  </style>
+  <body>
+    <div class="first">
+      <img src="/img/Google.jpg" alt="" />
+      <div id="name">Piyush Lohar</div>
+    </div>
+    <div class="second">
+      <ul class="Bar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Information</a></li>
+        <li><a href="#">Book</a></li>
+      </ul>
+    </div>
+    <div class="third">
+      <button class="btn" onclick="window.location.search">Contact us</button>
+      <button class="btn">Email</button>
+    </div>
+  </body>
+</html>

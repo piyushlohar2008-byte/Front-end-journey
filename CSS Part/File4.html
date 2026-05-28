@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css?family=Mate:regular,italic" rel="stylesheet" />
+  </head>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    body{
+      font-family: Mate;
+    }
+    .container{
+      margin: 33px auto;
+      width: 550px;
+      border: 2px solid red;
+    }
+    .flex{
+      border: 2px solid grey;
+      margin: 3px 2px;
+      padding: 13px 2px;
+      background-color: rgb(236, 234, 234);
+    }
+    #box1{
+      float: left;
+      width: 48%;
+    }
+    #box2{
+      float: right;
+      width: 48%;
+    }
+    #box3{
+      /*clear: left;*/
+      width: 99%;
+    }
+    #Head{
+      font-family: 'Roboto Slab', serif;
+    }
+    #para{
+      font-size: 17px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div id="box1" class="flex">
+        <h2 id="Head">Computer</h2>
+        <p id="para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum amet
+          corrupti aspernatur reprehenderit aut delectus dicta nobis quod
+          incidunt sapiente fugiat quasi, rerum eos, necessitatibus non quos
+          iste iure? Hic.
+        </p>
+      </div>
+      <div id="box2" class="flex">
+        <h2 id="Head">Fruits</h2>
+        <p id="para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+          ullam quasi laudantium ad deleniti provident? Corrupti molestias
+          placeat, officia similique ipsa excepturi sunt eveniet facilis. Quo
+          dolores beatae voluptate nostrum.
+        </p>
+      </div>
+      <div id="box3" class="flex">
+        <h2 id="Head">Stationary</h2>
+        <p id="para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+          ullam quasi laudantium ad deleniti provident? Corrupti molestias
+          placeat, officia similique ipsa excepturi sunt eveniet facilis. Quo
+          dolores beatae voluptate nostrum.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

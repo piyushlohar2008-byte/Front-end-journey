@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .parent{
+        width: 100%;
+        height: auto;
+        background-color: rgba(255, 166, 166, 0.75);
+        border: 2px dotted rgb(255, 0, 0);
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .item{
+        width: 100px;
+        margin: 10px;
+        height: 100px;
+        border: 2px solid black;
+        flex-grow: 2;
+    }
+    #id1{
+        background-color: rgb(146, 204, 255 , 0.75); 
+    }
+    #id2{
+        background-color: rgb(202, 167, 120, 0.5);
+    }
+    #id3{
+        background-color: rgb(80, 255, 197, 0.5);
+    }
+    #id4{
+        background-color: rgb(1, 1, 241, 0.2);
+    }
+    h2{
+        display: block;
+        color: white;
+        background-color: rgb(255, 0, 0);
+        text-align: center;
+    }
+</style>
+<body>
+    <h2>Flexibility and Responsive</h2>
+    <div class="parent">
+        <div class="item" id="id1"></div>
+        <div class="item" id="id2"></div>
+        <div class="item" id="id3"></div>
+        <div class="item" id="id4"></div>
+    </div>
+</body>
+</html>

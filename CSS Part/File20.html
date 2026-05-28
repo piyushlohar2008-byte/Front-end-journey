@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query-2</title>
+    <style>
+        .box{
+            font-size: 30px;
+            text-align: center;
+            display: none;
+        }
+        #box1{
+            background-color: rgb(147, 201, 248);
+        }
+        #box2{
+            background-color: antiquewhite;
+        }
+        #box3{
+            background-color: aqua;
+        }
+        #box4{
+            background-color: rgb(74, 88, 84);
+        } 
+
+        @media (min-width: 800px){
+            #box1{
+                background-color: burlywood;
+                display: block;
+            }
+        }
+        @media (min-width: 500px) and (max-width: 800px){
+            #box1{
+                background-color: burlywood;
+                display: block;
+            }
+            #box2{
+                color: white;
+                background-color: brown;
+                display: block;
+            }
+        }
+        @media (min-width: 300px) and (max-width: 500px){
+            #box1{
+                background-color: burlywood;
+                display: block;
+            }
+            #box2{
+                color: white;
+                background-color: brown;
+                display: block;
+            }
+            #box3{
+                color: white;
+                background-color: blueviolet;
+                display: block;
+            }
+        }
+        @media (max-width: 300px){
+            #box1{
+                background-color: burlywood;
+                display: block;
+            }
+            #box2{
+                color: white;
+                background-color: brown;
+                display: block;
+            }
+            #box3{
+                color: white;
+                background-color: blueviolet;
+                display: block;
+            }
+            #box4{
+                color: white;
+                background-color: blue;
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">I am big computer</div>
+    <div class="box" id="box2">I am computer</div>
+    <div class="box" id="box3">I am IPad</div>
+    <div class="box" id="box4">I am Phone</div>
+</body>
+</html>

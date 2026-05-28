@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex and Media</title>
+</head>
+<style>
+    .container{
+        border: 2px solid;
+        height: auto;
+        display: flex;
+    }
+    .left{
+        border: 2px solid blue;
+        margin: 4px;
+        width: 48%;
+        height: auto;
+    }
+    .left p{
+        text-align: justify;
+        padding: 5px;
+    }
+    .right{
+        margin: 4px;
+        width: auto;
+        height: auto;
+        display: flex;
+    }
+    #right-1{
+        margin: 1px;
+        border: 2px solid rgb(63, 0, 63);
+        width: 48%;
+        text-align: center;
+        height: auto;
+    }
+    #right-2{
+        margin: 1px;
+        width: auto;
+        height: auto;
+        border: 2px solid magenta;
+        padding: 5px;
+    }
+    img{
+        height: 80px;
+        width: 80px;
+    }
+    @media (max-width: 500px) {
+        .right{
+            flex-direction: column;
+        }
+    }
+    @media (max-width: 300px) {
+        .container{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="first">
+            <img src="/images/12.jpg" alt="">
+        </div>
+        <div class="left">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa vel doloribus ipsam, quisquam alias ullam</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa vel doloribus ipsam, quisquam alias ullam</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa vel doloribus ipsam, quisquam alias ullam</p>
+        </div>
+        <div class="right">
+            <div id="right-1">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div id="right-2">
+                <img src="/images/Google.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

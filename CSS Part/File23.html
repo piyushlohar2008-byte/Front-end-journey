@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Properties</title>
+</head>
+<style>
+    h2{
+        color: white;
+        background-color: red;
+        text-align: center;
+    }
+    .contain{
+        display: inline-block;
+    }
+    #id1{
+        display: block;
+        background-color: antiquewhite;
+    }
+    #id2{
+        display: none;
+        background-color: aquamarine;
+    }
+    #id1 span{
+        display: inherit;
+        background-color: rgb(102, 102, 102);
+        color: white;
+    }
+    #id2 span{
+        color: blue;
+    }
+</style>
+<body>
+    <h2>This is main heading</h2>
+    <div class="contain">
+        <p id="id1">Pin to prevent separation of handle from <span>Glass</span> </p>
+        <p id="id2">Special <span>quality</span> soft glass sweeps fine dust too</p>
+    </div>
+</body>
+</html>

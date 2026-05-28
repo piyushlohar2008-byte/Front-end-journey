@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main{
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 40px;
+        flex-wrap: wrap;
+    }
+    #id-1{
+        color: rgb(255, 0, 0);
+        font-size: 19px;
+        margin-left: 10px;
+    }
+    #id-2 a{
+        padding-right: 20px;
+        font-size: 18px;
+        color: white;
+    }
+    #id-2 a:hover{
+        color: rgb(173, 173, 173);
+        cursor: pointer;
+        text-decoration: underline blue;
+    }
+    #id-3{
+        margin-right: 5px;
+    }
+    #id-3 button:hover{
+        background-color: chocolate;
+        cursor: pointer;
+    }
+    @media (max-width: 650px) {
+        .main{
+            flex-direction: column;
+            height: auto;
+        }
+        
+    }
+</style>
+<body>
+    <header>
+        <div class="main">
+            <div class="class" id="id-1">
+                <a>NetFlex</a>
+            </div>
+            <div class="class" id="id-2">
+                <a>Home</a>
+                <a>About</a>
+                <a>Section</a>
+                <a>Contact</a>
+            </div>
+            <div class="class" id="id-3">
+                <input type="search" placeholder="Search Browser">
+                <button>Search</button>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

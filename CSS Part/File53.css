@@ -1,0 +1,28 @@
+.container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.small-container {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-rows: repeat(7, 100px);
+}
+.item {
+    border: 1px solid black;
+    margin: 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #f79d00, #f1f364);
+}
+
+@media (min-width: 260px) and (max-width: 495px) {
+    .item:last-child{
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations-2</title>
+</head>
+<style>
+    .container{
+        height: 200px;
+        width: 800px;
+        background-color: rgba(140, 43, 231, 0.603);
+        border: 2px solid black;
+    }
+    #box{
+        position: relative;
+        top: 20px;
+        left: 10px;
+        height: 100px;
+        width: 100px;
+        background-color: orange;
+        border: 2px solid black;
+        animation-name: line;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-delay: 1s;
+    }
+    @keyframes line {
+        0%{
+            top: 20px;
+            left: 10px;
+        }
+        50%{
+            top: 20px;
+            left: 680px;
+        }
+        100%{
+            top: 20px;
+            right: 680px;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div id="box"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+</head>
+<style>
+    .container{
+        height: auto;
+        width: auto;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: row;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+    #box1{
+        height: auto;
+        /* border: 2px solid blue; */
+        margin: 5px;
+        padding: 5px;
+    }
+    #box2{
+        display: flex;
+        height: 180px;
+        /* border: 2px solid brown; */
+        margin: 5px;
+        padding: 5px;
+    }
+    #box3{
+        text-align: justify;
+        height: auto;
+        margin: 5px;
+        padding: 5px;
+        /* border: 2px solid purple; */
+    }
+    .main{
+        text-align: justify;
+    }
+    @media (max-width: 420px) {
+        .container{
+            flex-direction: column;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div id="box1">
+            <p>Google Image</p>
+            <p>Download form browser</p>
+        </div>
+        <div id="box2">
+            <img src="/images/Google.jpg" alt="">
+        </div>
+        <div id="box3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, deleniti, quia animi 
+            <hr>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, exercitationem alias
+        </div>
+    </div>
+    <div class="main">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, mollitia libero id nisi dignissimos excepturi, voluptatum consequuntur reprehenderit doloribus accusamus fugit earum quod quidem vero delectus aliquid deserunt beatae tempora, vitae ipsam rem nesciunt dolor dicta voluptatem! Commodi illo fugit assumenda voluptatum. Harum eaque non, facere quo dignissimos, rem provident sequi, similique delectus quisquam ratione beatae ipsum recusandae modi odit temporibus iste facilis quidem excepturi deleniti necessitatibus fugiat officiis. Harum provident culpa, neque quisquam in velit vel a soluta eos porro magnam qui dolorem vitae, quam veritatis rem! Commodi deserunt beatae suscipit excepturi ullam doloribus rerum ipsam aperiam, natus explicabo quisquam sed! Quidem, ex similique laboriosam sapiente perferendis ducimus nesciunt quia? Dicta unde quas aut corrupti esse beatae perspiciatis explicabo in autem nulla illum odit dolorem iusto recusandae enim quam debitis rerum qui, quidem, vel ratione sint quis voluptates corporis. Expedita, sunt quasi! Quia minus blanditiis, esse 
+    </div>
+</body>
+</html>

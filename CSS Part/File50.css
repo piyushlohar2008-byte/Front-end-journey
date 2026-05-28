@@ -1,0 +1,40 @@
+h1 {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    padding: 1rem 0rem 1rem 0rem;
+    text-align: center;
+    font-size: 2.4rem;
+    font-family: Bodoni Moda;
+    color: #FF4545;
+    text-shadow: 2px 2px 2px #ffffff;
+}
+
+.container {
+    margin: 3rem 0rem 0rem 3rem;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 140px;
+    background: linear-gradient(to right, #ef32d9, #89fffd);
+    border: 2px solid #DE6E52;
+}
+.item {
+    margin: 0.5rem;
+}
+.box-1 {
+    background: linear-gradient(to left, #fceabb, #f8b500);
+}
+.box-2 {
+    background: linear-gradient(to right, #f79d00, #64f38c);
+}
+.box-3 {
+    background: linear-gradient(to right, orange, white, green);
+}
+.box-4 {
+    background: linear-gradient(to right, #a80077, #66ff00);
+}
+.box-5 {
+    background: linear-gradient(to right, #3a7bd5, #3a6073);
+}
+.box-6 {
+    background: linear-gradient(to right, #EECDA3, #EF629F);
+}

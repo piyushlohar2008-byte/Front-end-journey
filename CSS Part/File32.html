@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations-1</title>
+</head>
+<style>
+    .main {
+        height: 400px;
+        width: 400px;
+        background-color: rgba(112, 255, 207, 0.541);
+        border: 2px solid black;
+        margin-left: 30%;
+        margin-top: 50px;
+    }
+    #id{
+        position: relative;
+        left: 40px;
+        top: 40px;
+        width: 100px;
+        height: 100px;
+        background-color: rgba(210, 105, 30, 0.705);
+        border: 2px solid black;
+        animation-name: Round;
+        animation-duration: 8s;
+        animation-iteration-count: 2;
+        animation-delay: 1s;
+    }
+    @keyframes Round {
+        0%{
+            top: 40px;
+            left: 40px;
+        }
+        25%{
+            top: 40px;
+            left: 240px;
+        }
+        50%{
+            top: 200px;
+            left: 240px;
+        }
+        75%{
+            top: 200px;
+            left: 40px;
+        }
+        100%{
+            top: 40px;
+            left: 40px;
+        }
+    }
+    h2{
+        text-align: center;
+        color: white;
+        background-color: red;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+</style>
+<body>
+    <h2>Animations in CSS</h2>
+    <div class="main">
+        <div id="id"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex in CSS</title>
+</head>
+<style>
+    .container{
+        height: 300px;
+        width: 100%;
+        border: 2px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: row; */
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+
+        justify-content: center; 
+        /* justify-content: space-around; */
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+        
+        /* align-items: center; */
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+    }
+    .item{
+        width: 120px;
+        height: 120px;
+        background-color: antiquewhite;
+        margin: 8px;
+        padding: 5px;
+        border: 2px solid violet;
+    }
+    #item1{
+        /* This properties can get shrink/small */
+        flex-shrink: 2; 
+    }
+    #item2{
+        /* The order property decide the order of boxes */
+        order: 5; 
+    }
+    #item3{
+        flex-basis: 200px; 
+    }
+</style>
+<body>
+    <h2>This is flex properties</h2>
+    <div class="container">
+        <div class="item" id="item1">First Box</div>
+        <div class="item" id="item2">Second Box</div>
+        <div class="item" id="item3">Third Box</div>
+        <!-- <div class="item" id="item4">Fourth Box</div>
+        <div class="item" id="item5">Fifth Box</div>
+        <div class="item" id="item6">Sixth Box</div> -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Blur</title>
+</head>
+<style>
+    .container{
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        overflow: hidden;
+        position: relative;
+    }
+    .container::before{
+        content: "";
+        position: absolute;
+        background: url('/images/Homeimage.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        inset: 0;
+        opacity: 0.6;
+        z-index: -1;
+    }
+    .Class{
+        margin: 2px 0px;
+    }
+    #head{
+        color: black;
+        font-size: 1.6rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    #para{
+        font-size: 1.2rem;
+        font-family: cursive;
+    }
+    #btn button{
+        padding: 8px 12px;
+        background-color: orange;
+        font-size: 17px;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="Class" id="head"><h1>This is a heading</h1></div>
+        <div class="Class" id="para"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, impedit!</p></div>
+        <div class="Class" id="btn"><button>Click</button></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z-index</title>
+</head>
+<style>
+    /* Z-index is used to decide the order of box */
+    .box{
+        width: 120px;
+        height: 120px;
+        margin: 5px;
+    }
+    #box1{
+        border: 3px solid rgb(255, 0, 242);  
+        position: relative;
+        top: 120px;
+        background-color: aqua;
+    }
+    #box2{
+        border: 3px solid red;
+        position: relative;
+        top: 80px;
+        background-color: rgb(255, 145, 0);
+    }
+    #box3{
+        border: 3px solid blue;
+        position: relative;
+        top: 50px;
+        background-color: aqua;
+    }
+    #box4{
+        border: 3px solid black;
+        position: relative;
+        z-index: 5;
+        background-color: rgb(255, 145, 0);
+        top: 15px
+    }
+    .div{
+        display: block;
+    }
+</style>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+    <div class="div"></div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover-effect and Box-shadow</title>
+</head>
+<style>
+    .box{
+        display: inline-block;
+        flex-wrap: wrap;
+        height: 200px;
+        width: 200px;
+        margin: 15px;
+    }
+    #item-1{
+        background-image: url("https://images.unsplash.com/photo-1503777119540-ce54b422baff?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNhdHxlbnwwfHwwfHx8MA%3D%3D");
+        /* The cover value used to cover whole box-size */
+        background-size: cover;
+        /* background-position: center; */
+    }
+    #item-2{
+        background-image: url("https://plus.unsplash.com/premium_photo-1694819488591-a43907d1c5cc?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZG9nfGVufDB8fDB8fHww");
+        background-size: cover;
+        background-position: 5px;
+    }
+    #item-1:hover{
+        box-shadow: 2px 2px 2px rgb(156, 156, 156), -2px -2px 2px rgb(156, 156, 156);
+    }
+    #item-2:hover{
+        box-shadow: 2px 2px 2px rgb(156, 156, 156), -2px -2px 2px rgb(156, 156, 156);
+    }
+</style>
+<body>
+    <div class="box" id="item-1"></div>
+    <div class="box" id="item-2"></div>
+    <div class="box" id="item-3"></div>
+</body>
+</html>
