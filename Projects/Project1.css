@@ -1,0 +1,79 @@
+/* This is the main content of website */
+.container{
+    background-image: url(https://wallpaperaccess.com/full/834264.jpg);
+    background-size: 1020px 650px;
+    height: 620px;
+    width: 100%;
+    border: 2px solid black;
+    background-repeat: no-repeat;
+}
+
+/* This is the image and content */ 
+/* Displayed in the left-top of page */
+#id1{
+    padding-left: 15px;
+    padding-top: 0px;
+    height: 100px;
+    width: 150px;
+}
+#id1 img{
+    height: 120px;
+    width: 120px;
+}
+#id1 img:hover{
+    cursor:move;
+}
+.Box p{
+    padding-left: 15px;
+    line-height: 0px;
+    font-family: Exo;
+    color: white;
+    position: absolute;
+    top: 105px;
+}
+
+/* This is the navbar of web page */
+/* Displayed in center of web page */
+#id2{
+    position: relative;
+    left: 350px;
+    height: 60px;
+    width: 350px;
+    bottom: 95px;
+}
+.navBar ul{ 
+    overflow: auto;
+}
+.navBar li{
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    padding-left: 15px;
+}
+.navBar a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+.navBar a:hover{
+    color: rgb(184, 184, 184);
+    text-decoration: underline;
+}
+
+/* This is the buttons of web page */
+/* Displayed in top-right side */
+#id3{
+    position: fixed;
+    right: 0px;
+    top: 25px;
+    height: 100px;
+    width: 140px;
+    padding-left: 30px;
+    padding-top: 0px;
+    margin-left: 30px;
+}
+.btn{
+    cursor: pointer;
+    background-color: orange;
+    padding: 5px 10px;  
+}

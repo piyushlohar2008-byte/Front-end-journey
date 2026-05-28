@@ -1,0 +1,319 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* navBar section */
+#navbar{
+    display: flex;
+    background-color: black;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+.image{
+    margin-left: 10px;
+    padding: 3px 0px;
+}
+.image img{
+    height: 55px;
+    width: 50px;
+    border-radius: 50%;
+}
+.nav{
+    margin-left: 30px;
+}
+.nav li{
+    display: inline-block;
+}
+.nav a{
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+}
+@media (max-width: 410px){
+    #navbar{
+        flex-direction: column;
+        height: 90px;
+    }
+    .image img{
+        width: 40px;
+        height: 45px;
+    }
+    .nav a{
+        font-size: 14px;
+    }
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    background: url('https://static.vecteezy.com/system/resources/thumbnails/047/370/759/small_2x/coffee-cup-and-teaspoon-with-a-branch-of-greenery-in-the-upper-left-corner-on-a-dark-background-photo.jpg');
+    background-size: cover;
+    width: 100vw;
+}
+.heading{
+    margin: 10px 0px;
+}
+.heading h1{
+    font-family: Roboto;
+    color: white;
+    font-size: 2.2rem;
+}
+.para{
+    margin: 5px 0px;
+    width: 400px;
+}
+.para p{
+    color: rgb(224, 224, 224);
+    text-align: center;
+    font-family: Rubik;
+    font-size: 15px;
+}
+.btn{
+    margin: 10px 0px;
+}
+.btn button{
+    padding: 5px 15px;
+    font-size: 16px;
+    font-family: lora;
+    font-weight: bolder;
+    background-color: rgb(255, 81, 17);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.btn button:hover{
+    transform: scale(1.1);
+}
+@media (max-width: 425px){
+    .heading h1{
+        font-size: 1.2rem;
+    }
+    .para p{
+        font-size: 14px;
+    }
+    .para{
+        width: 300px;
+    }
+    .btn button{
+        padding: 3px 10px;
+        font-size: 14px;
+    }
+}
+
+/* Services Section */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Services h1{
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 2.4rem
+}
+
+#item-1{
+    margin: 0px 20px;
+    border: 1px solid black;
+    justify-content: center;
+    width: 220px;
+    border-radius: 20px;
+    background-color: rgb(231, 231, 231);
+}
+#item-1 img{
+    margin-left: 60px;
+    width: 100px;
+}
+#item-1 p{
+    padding: 5px;
+    text-align: center;
+}
+#item-1 h3{
+    text-align: center;
+    padding: 10px 0px;
+}
+#item-1:hover{
+    box-shadow: 2px 2px 10px gray, -2px -2px 10px gray;
+}
+
+#item-2{
+    border-radius: 20px;
+    margin: 0px 20px;
+    border: 1px solid black;
+    width: 220px;
+    background-color: rgb(231, 231, 231);
+}
+#item-2 img{
+    margin-left: 60px;
+    width: 100px;
+}
+#item-2 p{
+    padding: 5px;
+    text-align: center;
+}
+#item-2 h3{
+    text-align: center;
+    padding: 10px 0px;
+}
+#item-2:hover{
+    box-shadow: 2px 2px 10px gray, -2px -2px 10px gray;
+}
+
+#item-3{
+    margin: 0px 20px;
+    border: 1px solid black;
+    width: 220px;
+    border-radius: 20px;
+    background-color: rgb(231, 231, 231);
+}
+#item-3 img{
+    margin-left: 60px;
+    width: 100px;
+}
+#item-3 p{
+    padding: 5px;
+    text-align: center;
+}
+#item-3 h3{
+    text-align: center;
+    padding: 10px 0px;
+}
+#item-3:hover{
+    box-shadow: 2px 2px 10px gray, -2px -2px 10px gray;
+}
+.Class{
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+@media (max-width: 655px){
+    .container{
+        flex-direction: column;
+    }
+    .Class{
+        width: 250px;
+    }
+}
+@media (max-width: 425px){
+    #Services h1{
+        font-size: 1.6rem;
+    }
+}
+
+/* Client Section */
+#Clients{
+    margin-top: 30px;
+    background-image: url('https://media.istockphoto.com/id/516329534/photo/last-straw.jpg?s=1024x1024&w=is&k=20&c=FT44wbJ8xBJmTA5lXjT3a3CCEFZ8czHicQRioxN8ju8=');
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+#Clients h1{
+    text-align: center;
+    padding: 10px;
+    font-size: 2.4rem;
+    margin-bottom: 40px;
+}
+#box-1 img{
+   width: 150px; 
+}
+#box-2 img{
+   width: 150px;
+}
+#box-3 img{
+   width: 150px;
+}
+#box-4 img{
+   width: 150px;
+}
+
+.main img{
+    transition-property: all;
+    transition-duration: 0.5s;
+    border-radius: 8px;
+}
+.main img:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width: 425px){
+    #Clients h1{
+        font-size: 1.6rem;
+    }
+    #Clients img{
+        width: 100px;
+        flex-wrap: wrap;
+    }
+}
+
+/* Contact Section */
+#Contact{
+    background-color: gray;
+    height: 350px;
+}
+#Contact h1{
+    padding-left: 10px;
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.same span{
+    font-size: 20px;
+    font-weight: bold;
+}
+.same{
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+@media (max-width: 425px){
+    #Contact h1{
+        font-size: 1.6rem;
+    }
+    .same{
+        font-size: 17px;
+    }
+    .same span{
+        font-size: 19px;
+    }
+}
+
+/* Footer Section */
+#foot{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px 0px;
+    font-size: 1.3rem;
+}
+#foot span{
+    color: red;
+}
+@media (max-width: 425px) {
+    #foot{
+        font-size: 1rem;
+    }
+}
