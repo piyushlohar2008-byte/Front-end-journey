@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Simple Carousel</title>
+    <link rel="stylesheet" href="/CSS/bootstrap.css">
+    <script src="/js/bootstrap.bundle.js"></script>
+    <style>
+        .coustom_slider .carousel-indicators [data-bs-target] {
+            background-color: red !important;
+        }
+        .carousel-inner img {
+            max-height: 500px;
+        } 
+    </style>
+</head>
+
+<body>
+    <section class="container pt-4">
+        <section class="row">
+            <section class="col col-12">
+                <div id="carouselExample" class="carousel slide coustom_slider">
+
+                    <!-- carousel inner classes and there item  -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/images/Black Spidy.jpg" class="d-block w-100 img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/Iron man.jpg" class="d-block w-100 img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/Spider-man.jpg" class="d-block w-100 img-fluid" alt="...">
+                        </div>
+                    </div>
+
+                    <!-- Slider button  -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+        </section>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap advance navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <style>
+        @media (max-width: 991px) {
+            .navbar-collapse {
+                width: 100% !important;
+                margin-bottom: 1rem;
+                background-color: rgb(168, 168, 168);
+                transition-property: all;
+                transition-duration: 0.3s;
+                transition-timing-function: ease-in-out;
+                transform: translateX(-100%);
+                position: absolute;
+                left: 0;
+                top: 100%;
+            }
+            .nav-link {
+                color: white !important;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            .btn {
+                margin-bottom: 1rem;
+            }
+            .navbar-collapse.show {
+                transform: translateX(0);
+            }
+        }
+        .btn {
+            padding: 0.3rem 1.2rem;
+            border-radius: 20px !important;
+        }
+        .navbar-toggler-icon {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand fs-4" href="#">Navbar</a>
+        <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-3 mb-lg-0 gap-3 gap-lg-5">
+            <li class="nav-item">
+            <a class="nav-link active fs-5" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link fs-5" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Section
+            </a>
+            <ul class="dropdown-menu bg-secondary-subtle">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link fs-5" href="#">Contact Us</a>
+            </li>
+        </ul>
+        <div>
+            <button type="button" class="btn btn-primary">Sign in</button>
+        </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</nav>
+</body>
+</html>

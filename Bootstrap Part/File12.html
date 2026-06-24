@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap nav alignment</title>
+    <link rel="stylesheet" href="/CSS/bootstrap.css">
+    <script src="/js/bootstrap.bundle.js"></script>
+    <style>
+        .nav-link {
+            border-radius: 10px !important;
+        }
+        .nav-link:hover {
+            color: white !important;
+            background-color: #0D6EFD;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid bg-secondary-subtle">
+
+        <!-- Using flex-column with justify-content-classes we can create responsive navbar with proper alignment and spacing  -->
+        <ul class="nav flex-column flex-sm-row justify-content-center justify-content-sm-start py-2 fs-5 gap-3 align-content-center">
+            <li class="nav-item">
+                <a class="nav-link text-danger px-3 py-1" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-3 py-1" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-3 py-1" href="#">Project</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-3 py-1" href="#">Contact</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position and overflow classes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <style>
+        .container {
+            border: 5px solid rgb(0, 170, 0);
+        }
+        .row {
+            border: 6px solid skyblue;
+        }
+        .height-property {
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row height-property p-2">
+            <div class="col">
+                <div class="bg-warning overflow-hidden">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus architecto hic totam non facilis libero, cumque velit quisquam, deleniti excepturi quos corporis placeat molestiae omnis, magnam voluptates. Autem, tempore culpa. Est, laudantium laboriosam unde ratione quae eos. Incidunt eos aspernatur quaerat odit omnis? Maxime, dolore.
+                </div>   
+            </div>
+            <div class="col overflow-auto">
+                <div class="bg-info">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus architecto hic totam non facilis libero, cumque velit quisquam, deleniti excepturi quos corporis placeat molestiae omnis, magnam voluptates. Autem, tempore culpa. Est, laudantium laboriosam unde ratione quae eos. Incidunt eos aspernatur quaerat odit omnis? Maxime, dolore.
+                </div>
+            </div>
+            <div class="col">
+                <div class="bg-secondary">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus architecto hic totam non facilis libero, cumque velit quisquam, deleniti excepturi quos corporis placeat molestiae omnis, magnam voluptates. Autem, tempore culpa. Est, laudantium laboriosam unde ratione quae eos. Incidunt eos aspernatur quaerat odit omnis? Maxime, dolore.
+                </div>
+            </div>
+            <div class="col">
+                <div class="bg-light">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus architecto hic totam non facilis libero, cumque velit quisquam, deleniti excepturi quos corporis placeat molestiae omnis, magnam voluptates. Autem, tempore culpa. Est, laudantium laboriosam unde ratione quae eos. Incidunt eos aspernatur quaerat odit omnis? Maxime, dolore.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

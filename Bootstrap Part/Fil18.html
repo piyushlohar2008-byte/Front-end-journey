@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap responsive card</title>
+    <link rel="stylesheet" href="/CSS/bootstrap.css">
+    <script src="/js/bootstrap.bundle.js"></script>
+    <style>
+        .card {
+            transition: all 0.3s ease-in-out;
+        }
+        .card:hover {
+            cursor: default;
+            transform: translateY(-15px);
+        }
+        .card-img-top {
+            object-fit: cover;
+            height: 180px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container pt-5">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-4 g-3">
+            <div class="col">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvI55tpGnChX65YhFsd0pyBFPxcdo7x0MNRrAAVpuNoQ&s=10" class="card-img-top img-fluid w-100" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">image 1</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9gBnEC75oMt8a3yyD_eoJYnxzFc54hzTq9MCXo8U8Ow&s=10" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">image 2</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKSLBAcmSH16gGvhflk2azFKGL7dtNTi0_Oc3kNgq87g&s=10" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">image 3</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHhy8dk0hu4cG0QXzgCkPyn8sg2fzSdV79AgPTVPORag&s=10" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">image 4</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
