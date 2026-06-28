@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button group</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <style>
+        .container {
+            border: 3px solid green;
+        }
+        .row {
+            border: 5px solid skyblue;
+            border-radius: 1px;
+        }
+    </style>
+</head>
+<body>
+    <section class="container mt-3">
+        <div class="row p-3">
+            <div class="col-12 mb-3">
+                <div class="btn-group btn-group-lg">
+                    <button class="btn btn-primary">Click 1</button>
+                    <button class="btn btn-primary">Click 2</button>
+                    <button class="btn btn-primary">Click 3</button>
+                </div>
+            </div>
+
+            <div class="col-12 mb-3">
+                <div class="btn-group">
+                    <button class="btn btn-primary">Click 1</button>
+                    <button class="btn btn-warning">Click 2</button>
+                    <button class="btn btn-danger">Click 3</button>
+                </div>
+            </div>
+
+            <div class="col-12 mb-3">
+                <div class="btn-group btn-group-vertical">
+                    <button class="btn btn-info">Click 1</button>
+                    <button class="btn btn-secondary">Click 2</button>
+                    <button class="btn btn-success">Click 3</button>
+                </div>
+            </div>
+
+            <div class="col-12 mb-3">
+                <div class="btn-group">
+                    <input type="button" class="btn btn-outline-primary active" value="Check">
+                    <input type="button" class="btn btn-outline-danger disabled" value="Check">
+                    <input type="button" class="btn btn-outline-success" value="Check">
+                </div>
+            </div>
+
+            <div class="col-12">
+                <button class="btn btn-outline-primary btn-sm" onclick="window.location.href='https://www.google.com'" target="_blank">Visit</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

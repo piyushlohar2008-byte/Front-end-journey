@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap grid-system</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    @media (min-width: 425px) and (max-width: 575px) {
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+</style>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-4 col-lg-6 col-xl-2" id="box-1" style="background-color: gray ; padding: 0.3rem;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit reprehenderit exercitationem sunt consequuntur obcaecati, suscipit fugiat? Cum quam dignissimos tenetur nam eaque, amet assumenda 
+            </div>
+            <div class="col-12 col-sm-4 col-lg-6 col-xl-2" id="box-2" style="background-color: rgb(185, 129, 129) ; padding: 0.3rem;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit reprehenderit exercitationem sunt consequuntur obcaecati, suscipit fugiat? Cum quam dignissimos tenetur nam eaque, amet assumenda 
+            </div>
+            <div class="col-12 col-sm-4 col-lg-6 col-xl-2" id="box-3" style="background-color: rgb(212, 202, 113) ; padding: 0.3rem;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit reprehenderit exercitationem sunt consequuntur obcaecati, suscipit fugiat? Cum quam dignissimos tenetur nam eaque, amet assumenda 
+            </div>
+            <div class="col-12 col-sm-4 col-lg-6 col-xl-2" id="box-4" style="background-color: rgb(255, 78, 78) ; padding: 0.3rem;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit reprehenderit exercitationem sunt consequuntur obcaecati, suscipit fugiat? Cum quam dignissimos tenetur nam eaque, amet assumenda 
+            </div>
+            <div class="col-12 col-sm-4 col-lg-6 col-xl-2" id="box-5" style="background-color: rgb(173, 77, 252) ; padding: 0.3rem;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit reprehenderit exercitationem sunt consequuntur obcaecati, suscipit fugiat? Cum quam dignissimos tenetur nam eaque, amet assumenda 
+            </div>
+            <div class="col-12 col-sm-4 col-lg-6 col-xl-2" id="box-6" style="background-color: rgb(86, 187, 255) ; padding: 0.3rem;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit reprehenderit exercitationem sunt consequuntur obcaecati, suscipit fugiat? Cum quam dignissimos tenetur nam eaque, amet assumenda 
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</html>
