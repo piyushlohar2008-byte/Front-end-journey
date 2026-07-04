@@ -1,2 +1,2 @@
 # Front-end-journey
-My all web development codes
+My all front-end codes
